@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350E61472429038E00D32F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E61462429038E00D32F5A /* AppDelegate.swift */; };
+		350E61492429038E00D32F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E61482429038E00D32F5A /* SceneDelegate.swift */; };
+		350E614B2429038E00D32F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E614A2429038E00D32F5A /* ViewController.swift */; };
+		350E614E2429038E00D32F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350E614C2429038E00D32F5A /* Main.storyboard */; };
+		350E61502429038F00D32F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350E614F2429038F00D32F5A /* Assets.xcassets */; };
+		350E61532429038F00D32F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350E61512429038F00D32F5A /* LaunchScreen.storyboard */; };
+		350E6162242903A600D32F5A /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 350E615C242903A600D32F5A /* yudpsocket.c */; };
+		350E6163242903A600D32F5A /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E615D242903A600D32F5A /* yudpsocket.swift */; };
+		350E6164242903A600D32F5A /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 350E615E242903A600D32F5A /* ytcpsocket.c */; };
+		350E6165242903A600D32F5A /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E615F242903A600D32F5A /* ysocket.swift */; };
+		350E6166242903A600D32F5A /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E6160242903A600D32F5A /* ytcpsocket.swift */; };
+		350E6167242903A600D32F5A /* HHYSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E6161242903A600D32F5A /* HHYSocket.swift */; };
+		35FD2CBC2429D4BE0060EC2B /* IMMessage.proto in Sources */ = {isa = PBXBuildFile; fileRef = 35FD2CBB2429D4BD0060EC2B /* IMMessage.proto */; };
+		35FD2CBF2429D5270060EC2B /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD2CBE2429D5270060EC2B /* Immessage.proto.swift */; };
+		9B814CD3E5ACB1BFA0389393 /* Pods_HHYTVClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5FD324EC73C183CC6A1468 /* Pods_HHYTVClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		350E61432429038E00D32F5A /* HHYTVClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHYTVClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		350E61462429038E00D32F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		350E61482429038E00D32F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		350E614A2429038E00D32F5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		350E614D2429038E00D32F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		350E614F2429038F00D32F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		350E61522429038F00D32F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		350E61542429038F00D32F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350E615C242903A600D32F5A /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		350E615D242903A600D32F5A /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		350E615E242903A600D32F5A /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		350E615F242903A600D32F5A /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		350E6160242903A600D32F5A /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		350E6161242903A600D32F5A /* HHYSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHYSocket.swift; sourceTree = "<group>"; };
+		35FD2CBB2429D4BD0060EC2B /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = IMMessage.proto; sourceTree = "<group>"; };
+		35FD2CBE2429D5270060EC2B /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
+		3EF06D79DB96A240E5EA4F54 /* Pods-HHYTVClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHYTVClient.debug.xcconfig"; path = "Target Support Files/Pods-HHYTVClient/Pods-HHYTVClient.debug.xcconfig"; sourceTree = "<group>"; };
+		AC5FD324EC73C183CC6A1468 /* Pods_HHYTVClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHYTVClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D704682AF4DB8C4DA5F6D5FC /* Pods-HHYTVClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHYTVClient.release.xcconfig"; path = "Target Support Files/Pods-HHYTVClient/Pods-HHYTVClient.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350E61402429038E00D32F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B814CD3E5ACB1BFA0389393 /* Pods_HHYTVClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A9A285DAD330FBEA81C2CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EF06D79DB96A240E5EA4F54 /* Pods-HHYTVClient.debug.xcconfig */,
+				D704682AF4DB8C4DA5F6D5FC /* Pods-HHYTVClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		350E613A2429038E00D32F5A = {
+			isa = PBXGroup;
+			children = (
+				350E61452429038E00D32F5A /* HHYTVClient */,
+				350E61442429038E00D32F5A /* Products */,
+				04A9A285DAD330FBEA81C2CB /* Pods */,
+				A7BF57F49EE6702F3E14BBC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		350E61442429038E00D32F5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350E61432429038E00D32F5A /* HHYTVClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350E61452429038E00D32F5A /* HHYTVClient */ = {
+			isa = PBXGroup;
+			children = (
+				350E615A242903A600D32F5A /* Server */,
+				350E61462429038E00D32F5A /* AppDelegate.swift */,
+				350E61482429038E00D32F5A /* SceneDelegate.swift */,
+				350E614A2429038E00D32F5A /* ViewController.swift */,
+				35FD2CBB2429D4BD0060EC2B /* IMMessage.proto */,
+				35FD2CBE2429D5270060EC2B /* Immessage.proto.swift */,
+				350E614C2429038E00D32F5A /* Main.storyboard */,
+				350E614F2429038F00D32F5A /* Assets.xcassets */,
+				350E61512429038F00D32F5A /* LaunchScreen.storyboard */,
+				350E61542429038F00D32F5A /* Info.plist */,
+			);
+			path = HHYTVClient;
+			sourceTree = "<group>";
+		};
+		350E615A242903A600D32F5A /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				350E615B242903A600D32F5A /* ysocket */,
+				350E6161242903A600D32F5A /* HHYSocket.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		350E615B242903A600D32F5A /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				350E615C242903A600D32F5A /* yudpsocket.c */,
+				350E615D242903A600D32F5A /* yudpsocket.swift */,
+				350E615E242903A600D32F5A /* ytcpsocket.c */,
+				350E615F242903A600D32F5A /* ysocket.swift */,
+				350E6160242903A600D32F5A /* ytcpsocket.swift */,
+			);
+			path = ysocket;
+			sourceTree = "<group>";
+		};
+		A7BF57F49EE6702F3E14BBC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5FD324EC73C183CC6A1468 /* Pods_HHYTVClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		350E61422429038E00D32F5A /* HHYTVClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350E61572429038F00D32F5A /* Build configuration list for PBXNativeTarget "HHYTVClient" */;
+			buildPhases = (
+				D4403C7A03DC567D32C97B96 /* [CP] Check Pods Manifest.lock */,
+				350E613F2429038E00D32F5A /* Sources */,
+				350E61402429038E00D32F5A /* Frameworks */,
+				350E61412429038E00D32F5A /* Resources */,
+				67DC95E9FA7714723FD05508 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHYTVClient;
+			productName = HHYTVClient;
+			productReference = 350E61432429038E00D32F5A /* HHYTVClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350E613B2429038E00D32F5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.development;
+				TargetAttributes = {
+					350E61422429038E00D32F5A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 350E613E2429038E00D32F5A /* Build configuration list for PBXProject "HHYTVClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 350E613A2429038E00D32F5A;
+			productRefGroup = 350E61442429038E00D32F5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				350E61422429038E00D32F5A /* HHYTVClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350E61412429038E00D32F5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350E61532429038F00D32F5A /* LaunchScreen.storyboard in Resources */,
+				350E61502429038F00D32F5A /* Assets.xcassets in Resources */,
+				350E614E2429038E00D32F5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67DC95E9FA7714723FD05508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHYTVClient/Pods-HHYTVClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHYTVClient/Pods-HHYTVClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4403C7A03DC567D32C97B96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHYTVClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350E613F2429038E00D32F5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350E6162242903A600D32F5A /* yudpsocket.c in Sources */,
+				350E6165242903A600D32F5A /* ysocket.swift in Sources */,
+				35FD2CBC2429D4BE0060EC2B /* IMMessage.proto in Sources */,
+				350E6163242903A600D32F5A /* yudpsocket.swift in Sources */,
+				350E6167242903A600D32F5A /* HHYSocket.swift in Sources */,
+				350E614B2429038E00D32F5A /* ViewController.swift in Sources */,
+				350E6166242903A600D32F5A /* ytcpsocket.swift in Sources */,
+				350E61472429038E00D32F5A /* AppDelegate.swift in Sources */,
+				350E6164242903A600D32F5A /* ytcpsocket.c in Sources */,
+				35FD2CBF2429D5270060EC2B /* Immessage.proto.swift in Sources */,
+				350E61492429038E00D32F5A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		350E614C2429038E00D32F5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				350E614D2429038E00D32F5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		350E61512429038F00D32F5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				350E61522429038F00D32F5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		350E61552429038F00D32F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		350E61562429038F00D32F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		350E61582429038F00D32F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF06D79DB96A240E5EA4F54 /* Pods-HHYTVClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDEAR5GZYG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HHYTVClient",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = HHYTVClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devepoment.HHYTVClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		350E61592429038F00D32F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D704682AF4DB8C4DA5F6D5FC /* Pods-HHYTVClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NDEAR5GZYG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HHYTVClient",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = HHYTVClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devepoment.HHYTVClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350E613E2429038E00D32F5A /* Build configuration list for PBXProject "HHYTVClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350E61552429038F00D32F5A /* Debug */,
+				350E61562429038F00D32F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350E61572429038F00D32F5A /* Build configuration list for PBXNativeTarget "HHYTVClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350E61582429038F00D32F5A /* Debug */,
+				350E61592429038F00D32F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 350E613B2429038E00D32F5A /* Project object */;
+}

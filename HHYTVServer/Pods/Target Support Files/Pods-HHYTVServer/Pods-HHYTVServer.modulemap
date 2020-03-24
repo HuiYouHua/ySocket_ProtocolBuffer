@@ -1,0 +1,6 @@
+framework module Pods_HHYTVServer {
+  umbrella header "Pods-HHYTVServer-umbrella.h"
+
+  export *
+  module * { export * }
+}
