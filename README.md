@@ -16,8 +16,7 @@ HHYTVClient：客户端
 
 ###ProtocolBuffer在swift5、Xcode11中集成：
 
-ProtocolBuffer环境安装
-**环境安装**
+**ProtocolBuffer环境安装**
 
 - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -30,7 +29,9 @@ ProtocolBuffer环境安装
 - **brew install protobuf-swift**`没有这一步，proto文件转swift会失败`
 
 
-**客户端集成**cocoaPods
+
+
+客户端集成**cocoaPods
 
 ```
 use_frameworks!
@@ -40,10 +41,15 @@ pod 'ProtocolBuffers-Swift'
 
 
 **服务器集成**
+
 因为服务器使用Mac编写,不能直接使用cocoapods集成
+
 因为需要将工程编译为静态库来集成
+
 到Git中下载整个库
+
 执行脚本: ./scripts/build.sh
+
 添加: ./src/ProtocolBuffers/ProtocolBuffers.xcodeproj到项目中
 
 **ProtocolBuffer的使用**
