@@ -25,6 +25,7 @@ class ServerManager: NSObject {
             while self.isServerRunning {
                 if let client = self.serverSocket.accept() {
                     DispatchQueue.global().async {
+                        print("有客户端连上了")
                         self.handlerClient(client)
                     }
                 }

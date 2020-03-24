@@ -18,6 +18,8 @@ protocol HHYSocketDelegate: class {
 class HHYSocket {
     weak var delegate: HHYSocketDelegate?
     
+    fileprivate var timer: Timer!
+
     fileprivate var tcpClient: TCPClient
     fileprivate var userInfo: UserInfo.Builder = {
        let userInfo = UserInfo.Builder()
@@ -31,11 +33,24 @@ class HHYSocket {
         tcpClient = TCPClient(addr: addr, port: port)
     }
     
+    deinit {
+        if (timer != nil) {
+            timer.invalidate()
+            timer = nil
+        }
+    }
+    
 }
 
 extension HHYSocket {
     func connectServer() -> Bool {
-        return tcpClient.connect(timeout: 5).0
+        let (status, _) = tcpClient.connect(timeout: 5)
+        if status {
+            // 心跳定时器
+            timer = Timer(fireAt: Date(), interval: 9, target: self, selector: #selector(sendHeatBeat), userInfo: nil, repeats: true)
+            RunLoop.main.add(timer, forMode: .common)
+        }
+        return status
     }
     
     func startReadMsg() {
@@ -155,5 +170,17 @@ extension HHYSocket {
         // 4.发送消息
         let totalData = headerData + typeData + data
         let _ = tcpClient.send(data: totalData)
+    }
+    
+
+}
+
+extension HHYSocket {
+    // 发送ping心跳
+    @objc fileprivate func sendHeatBeat() {
+        let heatString = "#"
+        let heatData = heatString.data(using: .utf8)!
+        print("发送心跳:" + heatString)
+        sendMsg(data: heatData, type: 100)
     }
 }
