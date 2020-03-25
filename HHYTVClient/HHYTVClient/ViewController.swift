@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    fileprivate lazy var socket: HHYSocket = HHYSocket(addr: "127.0.0.1", port: 8080)
+    fileprivate lazy var socket: HHYSocket = HHYSocket(addr: "192.168.1.101", port: 8080)
     
     override func viewDidLoad() {
         super.viewDidLoad()

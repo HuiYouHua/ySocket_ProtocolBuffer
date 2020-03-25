@@ -10,7 +10,7 @@ import UIKit
 var serverport = 8080
 
 class ServerManager: NSObject {
-    var serverSocket:TCPServer=TCPServer(addr: "127.0.0.1", port: serverport)
+    var serverSocket:TCPServer=TCPServer(addr: "192.168.1.101", port: serverport)
     
     fileprivate var isServerRunning : Bool = false
     fileprivate lazy var clientMrgs : [ClientManager] = [ClientManager]()
